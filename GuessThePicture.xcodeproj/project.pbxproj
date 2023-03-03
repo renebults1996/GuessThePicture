@@ -14,6 +14,7 @@
 		D73A64CE29B0101800D4285F /* GuessThePictureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73A64CD29B0101800D4285F /* GuessThePictureTests.swift */; };
 		D73A64D829B0101800D4285F /* GuessThePictureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73A64D729B0101800D4285F /* GuessThePictureUITests.swift */; };
 		D73A64DA29B0101800D4285F /* GuessThePictureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73A64D929B0101800D4285F /* GuessThePictureUITestsLaunchTests.swift */; };
+		D745344829B29B810050803B /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D745344729B29B810050803B /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D73A64D329B0101800D4285F /* GuessThePictureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessThePictureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73A64D729B0101800D4285F /* GuessThePictureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessThePictureUITests.swift; sourceTree = "<group>"; };
 		D73A64D929B0101800D4285F /* GuessThePictureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessThePictureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D745344729B29B810050803B /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,10 @@
 		D73A64BB29B0101700D4285F /* GuessThePicture */ = {
 			isa = PBXGroup;
 			children = (
+				D7D78D7229B15D0200FBEA24 /* viewModels */,
+				D7D78D7129B15CFA00FBEA24 /* views */,
+				D7D78D7029B15CE200FBEA24 /* models */,
 				D73A64BC29B0101700D4285F /* GuessThePictureApp.swift */,
-				D73A64BE29B0101700D4285F /* ContentView.swift */,
 				D73A64C029B0101800D4285F /* Assets.xcassets */,
 				D73A64C229B0101800D4285F /* Preview Content */,
 			);
@@ -125,6 +129,29 @@
 				D73A64D929B0101800D4285F /* GuessThePictureUITestsLaunchTests.swift */,
 			);
 			path = GuessThePictureUITests;
+			sourceTree = "<group>";
+		};
+		D7D78D7029B15CE200FBEA24 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		D7D78D7129B15CFA00FBEA24 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D73A64BE29B0101700D4285F /* ContentView.swift */,
+				D745344729B29B810050803B /* GameView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D7D78D7229B15D0200FBEA24 /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D73A64BF29B0101700D4285F /* ContentView.swift in Sources */,
+				D745344829B29B810050803B /* GameView.swift in Sources */,
 				D73A64BD29B0101700D4285F /* GuessThePictureApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
