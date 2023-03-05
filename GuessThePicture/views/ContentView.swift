@@ -9,25 +9,21 @@ import SwiftUI
 
 
 struct mainMenu: View {
-    @State var isGameView = false
+    @StateObject var viewModel = MainMenuViewModel()
     
     var body: some View {
         HStack {
             VStack {
                 Button {
-                    isGameView.toggle()
+                    viewModel.isGameView = true
+                    
                     
                 } label: {
-                    Text("Play")
-                        .font(.title)
-                        .fontWeight(.semibold)
-                        .frame(width: 250, height: 50)
-                        .background(Color.gray)
-                        .cornerRadius(20)
+                    GameButton(title: "Play", backgroundColor: .green)
                 }
             }
-            .fullScreenCover(isPresented: $isGameView) {
-                GameView()
+            .fullScreenCover(isPresented: $viewModel.isGameView) {
+                GameView(gameViewModel: GameViewModel())
             }
             
         }
